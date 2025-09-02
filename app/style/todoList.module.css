@@ -1,0 +1,6 @@
+.inputWrap {display: flex;}
+.toDoList {display: flex; align-items: center;}
+.checkBox:checked + .toDoPara {text-decoration: line-through;}
+.trashBin {display: block; display: flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 15px;
+  background-color: #d2d2d2; margin-left: 10px; cursor: pointer}
