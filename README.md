@@ -1,4 +1,8 @@
+# 넥스트JS 스터디
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+> GitHub MCP 연결 테스트 중 🚀
 
 ## Getting Started
 
