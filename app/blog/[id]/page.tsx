@@ -14,6 +14,13 @@ interface PostType {
   text: string
 }
 
+// GitHub Pages static export를 위한 generateStaticParams 함수
+export async function generateStaticParams() {
+  return postData.map((post) => ({
+    id: post.id.toString(),
+  }))
+}
+
 export default function BlogPage({params}: PageProps):JSX.Element {
   const {id} = use(params);
   const post: PostType | undefined = postData.find(post => post.id === parseInt(id));
