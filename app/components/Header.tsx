@@ -4,8 +4,9 @@ import { CSSProperties } from 'react';
 export default function Header(): JSX.Element {
   const headerStyle: CSSProperties = {
     padding: '20px',
-    backgroundColor: '#f0f0f0',
-    borderBottom: '1px solid #ddd'
+    borderBottom: '1px solid #ddd',
+    color: '#333',
+    textDecoration: 'none'
   }
 
   const linkStyle: CSSProperties = {
@@ -13,6 +14,11 @@ export default function Header(): JSX.Element {
   }
   return (
     <header style={headerStyle}>
+      <div>
+        <Link href="/auth/signup">
+          Sign Up
+        </Link>
+      </div>
       <nav>
         <Link href="/" style={linkStyle}>
           홈

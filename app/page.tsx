@@ -18,17 +18,6 @@ export default function Home() {
     e.preventDefault();
     setInfo({id: ID, password: PW});
 
-    // const login = () => {
-    //   // 임시 클라이언트 사이드 로그인 (GitHub Pages용)
-    //   if(ID === 'test' && PW === '111111') {
-    //     console.log({ success: true, message: "로그인 성공" });
-    //     alert("로그인 성공!");
-    //   } else {
-    //     console.log({ success: false, message: "로그인 실패" });
-    //     alert("로그인 실패!");
-    //   }
-    // }
-    // login();
     const login = async() => {
       try {
         const response = await fetch('/api/login', {
